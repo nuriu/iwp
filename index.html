@@ -18,23 +18,30 @@
 
 <body>
 	<div class="container-fluid">
-		<h1>This is a Heading</h1>
-		<p>This is a paragraph.</p>
 
-		<button id="temizle">Belgeyi Temizle</button>
+		<br>
+
+		<div class="row">
+			<div class="col-xs-2">
+				<ul class="nav nav-pills nav-stacked">
+					<li role="presentation" class="active" id="bj"><a href="#">Basit jQuery</a></li>
+					<li role="presentation" id="hm"><a href="#">Hesap Makinesi</a></li>
+					<li role="presentation" id="slider"><a href="#">Slider</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-10" id="icerik">
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- footer -->
+		</div>
+
 	</div>
-	<script type="text/javascript">
-        $(document).ready(function() {
-            console.log("Belge yüklendi.");
-        });
 
-        $("#temizle").click(function(){
-            $("h1").hide(2000);
-            $("p").hide(1500);
-            $(this).hide();
-        });
 
-    </script>
+
+	<script type="text/javascript" src="js/index.js" />
 
 </body>
 
