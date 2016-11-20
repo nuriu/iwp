@@ -21,3 +21,9 @@ $("#bj").click(function () {
     $("#bj").addClass("active");
     $("#icerik").load("html/bj.html");
 });
+
+$("#vizeOrnekSorular").click(function(){
+    $("li.active").removeClass("active");
+    $("#vizeOrnekSorular").addClass("active");
+    $("#icerik").load("html/vos.html");
+});
