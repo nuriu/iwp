@@ -2,22 +2,32 @@
  
 İWP dersi için jQuery ve Bootstrap ile basit, pratik alıştırmalar. 
 
+jQuery Örnekleri  
+------
+
 ## Hesap Makinesi
 
-> html/hm.html  
-> js/hm.js  
+> jquery/html/hm.html  
+> jquery/js/hm.js  
 
 ## Slider
 
-> html/slider.html  
-> js/slider.js  
+> jquery/html/slider.html  
+> jquery/js/slider.js  
 
 ## Vize Örnek Soruları
 
-> html/vos.html  
-> js/vos.hs  
+> jquery/html/vos.html  
+> jquery/js/vos.hs  
 
 ## Tablo Örneği
 
-> html/tablo.html  
-> js/tablo.js  
+> jquery/html/tablo.html  
+> jquery/js/tablo.js  
+
+Bootstrap Örnekleri
+------
+
+## Tablolar
+
+> bootstrap/tablolar.html  
