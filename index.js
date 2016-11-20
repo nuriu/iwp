@@ -39,3 +39,9 @@ $("#bsTablolar").click(function () {
     $("#bsTablolar").addClass("active");
     $("#icerik").load("bootstrap/tablolar.html");
 });
+
+$("#bsFormlar").click(function () {
+    $("li.active").removeClass("active");
+    $("#bsFormlar").addClass("active");
+    $("#icerik").load("bootstrap/formlar.html");
+});
