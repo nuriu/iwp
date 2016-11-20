@@ -6,7 +6,7 @@ $(document).ready(function () {
 });
 
 $("#btnTest1").click(function () {
-    $("img").slideToggle(3000);
+    $("img").slideUp(3000);
 });
 
 $("#btnTest2").click(function () {

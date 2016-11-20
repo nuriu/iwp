@@ -1,47 +1,16 @@
 $(document).ready(function () {
     console.log("Belge yüklendi.");
+
     $("#icerik").load("jquery/html/bj.html");
 });
 
-// Menü
-$("#hm").click(function () {
+$("ul li").click(function () {
     $("li.active").removeClass("active");
-    $("#hm").addClass("active");
-    $("#icerik").load("jquery/html/hm.html");
-});
+    $(this).addClass("active");
 
-$("#slider").click(function () {
-    $("li.active").removeClass("active");
-    $("#slider").addClass("active");
-    $("#icerik").load("jquery/html/slider.html");
-});
-
-$("#bj").click(function () {
-    $("li.active").removeClass("active");
-    $("#bj").addClass("active");
-    $("#icerik").load("jquery/html/bj.html");
-});
-
-$("#vizeOrnekSorular").click(function () {
-    $("li.active").removeClass("active");
-    $("#vizeOrnekSorular").addClass("active");
-    $("#icerik").load("jquery/html/vos.html");
-});
-
-$("#tablo").click(function () {
-    $("li.active").removeClass("active");
-    $("#tablo").addClass("active");
-    $("#icerik").load("jquery/html/tablo.html");
-});
-
-$("#bsTablolar").click(function () {
-    $("li.active").removeClass("active");
-    $("#bsTablolar").addClass("active");
-    $("#icerik").load("bootstrap/tablolar.html");
-});
-
-$("#bsFormlar").click(function () {
-    $("li.active").removeClass("active");
-    $("#bsFormlar").addClass("active");
-    $("#icerik").load("bootstrap/formlar.html");
+    if (this.id.slice(0, 2) == "bs") {
+        $("#icerik").load("bootstrap/" + this.id.slice(2, this.id.length) + ".html");
+    } else {
+        $("#icerik").load("jquery/html/" + this.id + ".html");
+    }
 });

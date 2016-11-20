@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    console.log("Tablo örneği yüklendi.");
+    
     $("tr").click(function() {
         $(this).css("background-color", "blue");
         $(this).fadeOut(3000, function() {
