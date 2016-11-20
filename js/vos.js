@@ -5,10 +5,10 @@ $(document).ready(function () {
     $("#a1").attr("title", "xyz");
 });
 
-$("#btnTest1").click(function(){
+$("#btnTest1").click(function () {
     $("img").slideToggle(3000);
 });
 
-$("#btnTest2").click(function(){
+$("#btnTest2").click(function () {
     $("#div2").html($("#div1").html());
 });

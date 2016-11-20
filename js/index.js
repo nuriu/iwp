@@ -22,8 +22,14 @@ $("#bj").click(function () {
     $("#icerik").load("html/bj.html");
 });
 
-$("#vizeOrnekSorular").click(function(){
+$("#vizeOrnekSorular").click(function () {
     $("li.active").removeClass("active");
     $("#vizeOrnekSorular").addClass("active");
     $("#icerik").load("html/vos.html");
+});
+
+$("#tablo").click(function () {
+    $("li.active").removeClass("active");
+    $("#tablo").addClass("active");
+    $("#icerik").load("html/tablo.html");
 });
